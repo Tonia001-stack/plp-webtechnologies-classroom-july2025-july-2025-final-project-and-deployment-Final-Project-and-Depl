@@ -1,8 +1,10 @@
 Anthonia Othetheso's Portfolio Website
-live project URL:
+
+live project URL:https://plpwebtechfinalalproject.netlify.app
 
 
-PROJECT OVERVIEW
+PROJECT OVERVIEW:
+
 This project is a personal portfolio website designed to showcase my skills and projects as a front-end developer. It is a multi-page static site built from the ground up to be a production-ready example of my abilities in planning, building, and deploying a modern web application.
 
 
@@ -55,19 +57,19 @@ A production-friendly project structure was used to organize all assets.
 │   └── css-js-transition.jpg
 └── README.md
 
-Getting Started
+Getting Started🚀
 To get a local copy of this project up and running on your machine, follow these simple steps.
 
 Clone the repository:
 
-git clone [https://github.com/your-username/your-portfolio-project.git](https://github.com/your-username/your-portfolio-project.git)
+git clone https://github.com/Tonia001-stack/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl.git
 
 
 
 
 Navigate to the project directory:
 
-cd your-portfolio-project
+cd plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl
 
 
 
@@ -86,12 +88,12 @@ Custom Domain: The site can be easily linked to a custom domain.
 
 Free SSL: Netlify provides a free SSL certificate to ensure secure browsing for all visitors.
 
-Access the live project here: https://your-netlify-site-name.netlify.app
+Access the live project here: https://plpwebtechfinalalproject.netlify.app
 
 Author
 This project was developed by Anthonia Othetheso.
 
-GitHub: 
+GitHub: https://github.com/Tonia001-stack
 
 
 License
