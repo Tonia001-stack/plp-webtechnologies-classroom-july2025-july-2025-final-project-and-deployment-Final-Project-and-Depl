@@ -1,0 +1,138 @@
+/* Hero Section with Beautiful Background */
+.hero-section {
+    /* Beautiful gradient overlay background */
+    background: linear-gradient(
+        135deg,
+        rgba(74, 144, 226, 0.9) 0%,
+        rgba(80, 102, 144, 0.8) 50%,
+        rgba(45, 52, 54, 0.9) 100%
+    ),
+    url('https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80');
+    
+    /* Background properties */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    /* Section styling */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+/* Optional: Add subtle animation */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(74, 144, 226, 0.1) 25%,
+        transparent 50%,
+        rgba(80, 102, 144, 0.1) 75%,
+        transparent 100%
+    );
+    animation: shimmer 8s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Hero Content Styling */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* Enhanced Button Styling for Hero */
+.hero-section .btn {
+    background: linear-gradient(45deg, #4a90e2, #506690);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-section .btn:hover {
+    background: linear-gradient(45deg, #506690, #4a90e2);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design for Hero */
+@media (max-width: 768px) {
+    .hero-section {
+        background-attachment: scroll; /* Better mobile performance */
+        padding: 2rem 0;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-content {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-section .btn {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,50 @@
+/* ---------------------------------
+   Responsive Design
+--------------------------------- */
+
+@media (max-width: 768px) {
+    /* General adjustments for smaller screens */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Header */
+    nav .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: var(--card-bg-color);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        box-shadow: var(--shadow);
+        padding: 1rem 0;
+    }
+
+    nav .nav-list.active {
+        display: flex;
+    }
+
+    nav .nav-list li {
+        margin: 0.5rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    /* About Section */
+    .about-flex {
+        flex-direction: column;
+    }
+}
